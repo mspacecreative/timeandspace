@@ -37,9 +37,6 @@ get_header();
 			  		<?php if( have_rows('service_bucket') ):
 			  		      	while ( have_rows('service_bucket') ) : the_row(); ?>
 			  		<div class="service-bucket-container clearfix">
-			  			<div class="service-bucket" style="background: url('<?php the_sub_field('bucket_background_image'); ?>') no-repeat center center;">
-			  				<div class="colour-overlay" style="background-color: <?php the_sub_field('colour_overlay'); ?>;"></div>
-			  			</div>
 			  			
 			  			<div class="service-bg">
 			  				<div class="service-description">
@@ -51,6 +48,10 @@ get_header();
 			  				<div class="service-button">
 			  					<a href="<?php the_sub_field('bucket_cta_button'); ?>" class="et_pb_button">Learn More</a>
 			  				</div>
+			  			</div>
+			  			
+			  			<div class="service-bucket" style="background: url('<?php the_sub_field('bucket_background_image'); ?>') no-repeat center center;">
+			  				<div class="colour-overlay" style="background-color: <?php the_sub_field('colour_overlay'); ?>;"></div>
 			  			</div>
 			  			
 			  		</div>

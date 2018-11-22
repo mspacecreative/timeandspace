@@ -2380,7 +2380,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 		float: left;
 		width: 50%;
 	}
-	.service-bucket-container:nth-child(even) .service-bucket {
+	.service-bucket-container:nth-child(even) .service-bg {
 		order: 2;
 	}
 }
@@ -2463,4 +2463,10 @@ li.menu-item-has-children span.sub-toggle {
   width: 43px;
   text-align: center;
   font-size: 20px;
+}
+
+@media (max-width: 812px) {
+	.cpt-title {
+		padding-top: 35%;
+	}
 }
