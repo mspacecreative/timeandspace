@@ -2001,7 +2001,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	position: relative!important;
 }
 
-.cpt-header-area:before, .hero-bg-img:before, #main-footer:before, .case-studies-feature-img:before {
+.cpt-header-area:before, .hero-bg-img:before, #main-footer:before, .case-studies-feature-img:before, .service-bucket:before {
 	content: '';
 	background: url(images/overlays/logo-icon-hero-overlay.png)no-repeat top	 right;
 	position: absolute;

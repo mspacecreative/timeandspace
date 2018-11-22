@@ -5744,3 +5744,5 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+.htaccess
+wp-content/cache/et/618/et-core-unified-15429138808821.min.css
