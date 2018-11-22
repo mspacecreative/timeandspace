@@ -18,6 +18,10 @@ Author URI: https://www.mspacecreative.com
 	transition: all 0.4s ease-in-out;
 }
 
+.container {
+	z-index: 10;
+}
+
 .et_pb_row {
 	max-width: 1140px;
 	width: 90%;
