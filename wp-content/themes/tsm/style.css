@@ -1604,19 +1604,6 @@ body {
 }
 
 @media only screen and (min-width: 980px) {
-.service-bucket-container {
-	display: flex;
-	align-items: center;
-}
-
-.service-bucket, .service-bg {
-	float: left;
-	width: 50%;
-}
-.service-bucket-container:nth-child(even) .service-bucket {
-	order: 2;
-}
-
 .page-id-1076 .service-container-wrap {
 	width: 100%;
 	max-width: none;
@@ -1640,44 +1627,8 @@ body {
 	border-top: 1px solid #fff;
 	color: #000!important;
 }
-@media only screen and (min-width: 768px)
-                   and (max-width: 980px) {
-                   
-.service-bucket-container {
-	float: left;
-	width: 48%;
-	margin-right: 4%;
-	margin-bottom: 4%;
-	position: relative;
-	padding: 5% 0;
-}
-
-.et_pb_cta_0 {
-	max-width: none!important;
-}
-
-.page-id-1076 .service-bucket-container {
-	width: 50%;
-	margin: 0;
-	padding: 0;
-}
-.page-id-1076 #main-content .service-description p {
-	max-width: none;
-}
-.service-bucket-container:nth-child(2n) {
-	margin-right: 0;
-}
-}
 @media only screen and (max-width: 768px) {
                    
-.service-bucket-container {
-	float: none;
-	width: 90%;
-	margin: auto;
-	position: relative;
-	padding: 5% 0;
-}
-
 .page-id-1076 .service-bucket-container {
 	width: 100%;
 	padding: 0;
@@ -1687,10 +1638,6 @@ body {
 }
 .service-bucket-container:last-child .service-button {
 	border-bottom: none;
-}
-
-.service-container-wrap-inner {
-	padding: 30px 0;
 }
 }
 
@@ -1729,7 +1676,6 @@ body {
 }
 .service-bucket {
 	position: relative;
-	padding: 15% 0;
 }
 
 .rounded-border {
@@ -2016,6 +1962,10 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 
 #main-footer:before {
 	background-size: 35%;
+}
+
+.service-bucket:before {
+	background-size: 50%;
 }
 
 .cpt-header-area:before {
@@ -2414,6 +2364,21 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 		padding-left: 0;
 	}
 		
+}
+
+@media (min-width: 767px) {
+	.service-bucket-container {
+		display: flex;
+		align-items: center;
+	}
+	
+	.service-bucket, .service-bg {
+		float: left;
+		width: 50%;
+	}
+	.service-bucket-container:nth-child(even) .service-bucket {
+		order: 2;
+	}
 }
 
 @media (max-width: 767px) {

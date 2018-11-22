@@ -24,4 +24,7 @@ $(document).ready(function () {
 	if ($('.the_solution_section').siblings().length == 0 ) { 
 		$('.the_solution_section').css('width', '100%');
 	}
+	
+	// SERVICES SECTION IMAGE HEIGHT
+	$('.service-bucket').css('height', $('.service-bg').outerHeight());
 });
