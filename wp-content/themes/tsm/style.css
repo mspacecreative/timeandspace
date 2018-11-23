@@ -118,11 +118,15 @@ Author URI: https://www.mspacecreative.com
 }
 
 .logo-grid .et_pb_image {
-	text-align: left;
+	text-align: center;
 }
 
 .logo-grid img {
 	max-width: 60%;
+}
+
+.logo-grid img.no-max-width {
+	max-width: none;
 }
 
 #et-footer-nav .container {
