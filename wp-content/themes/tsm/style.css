@@ -1605,14 +1605,21 @@ body {
 	background-blend-mode: luminosity;
 }
 
-.service-bucket-container:nth-child(odd) .service-bucket {
-	-webkit-filter: grayscale(.25%) sepia(1) saturate(.5) brightness(80%) hue-rotate(250deg);
-	filter: grayscale(.25%) sepia(1) saturate(.5) brightness(80%) hue-rotate(250deg);
+.service-bucket-container:nth-child(odd) .service-bucket .colour-overlay {
+	/*-webkit-filter: grayscale(.25%) sepia(1) saturate(.5) brightness(80%) hue-rotate(250deg);
+	filter: grayscale(.25%) sepia(1) saturate(.5) brightness(80%) hue-rotate(250deg);*/
+	mix-blend-mode: color;
+	opacity: 1!important;
+	background-color: beige!important;
 }
 
-.service-bucket-container:nth-child(even) .service-bucket {
-	filter: grayscale(100%) sepia(.5) brightness(80%) hue-rotate(0deg);
-	-webkit-filter: grayscale(100%) sepia(.5) brightness(80%) hue-rotate(0deg);
+.service-bucket-container:nth-child(even) .service-bucket .colour-overlay {
+	/*filter: grayscale(100%) sepia(.5) brightness(80%) hue-rotate(0deg);
+	-webkit-filter: grayscale(100%) sepia(.5) brightness(80%) hue-rotate(0deg);*/
+	mix-blend-mode: color;
+	opacity: 1!important;
+	background-color: #514151!important;
+	
 }
 
 .page-id-1076 .service-container-wrap {
