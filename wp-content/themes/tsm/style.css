@@ -2496,3 +2496,15 @@ li.menu-item-has-children span.sub-toggle {
 #footer-widgets .footer-widget li.current-menu-item a {
 	color: #83a138;
 }
+
+@media (max-device-width: 400px) {
+	.slick-arrow {
+		display: none;
+	}
+}
+
+@media (max-device-width: 812px) and (orientation: landscape) {
+	.slick-arrow {
+		display: none;
+	}
+}
