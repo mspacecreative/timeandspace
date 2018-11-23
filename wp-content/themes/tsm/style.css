@@ -2393,12 +2393,12 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 		
 }
 
-@media (max-device-width: 1024) {
+@media (max-device-width: 1024px) {
 	.page .et_pb_row, .single .et_pb_row, .et_right_sidebar #sidebar {
 		padding-right: 5%;
 		padding-left: 5%;
 	}
-	.home.page .et_pb_row, .page .cpt-header-area .et_pb_row {
+	.page .et_pb_row, .page .cpt-header-area .et_pb_row {
 		padding-right: 0;
 		padding-left: 0;
 	}
