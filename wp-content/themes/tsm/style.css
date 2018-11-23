@@ -2409,11 +2409,11 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 		float: left;
 		width: 50%;
 	}
-	.service-bucket-container {
+	.service-bucket-container  {
 		display: flex;
 		align-items: center;
 	}
-	.service-bucket-container:nth-child(even) .service-bg, .archive article:nth-child(even) .service-bg {
+	.service-bucket-container:nth-child(even) .service-bg, .page-id-601 article .service-bucket-container:nth-child(even) .service-bg {
 		order: 2;
 	}
 }
@@ -2534,4 +2534,12 @@ li.menu-item-has-children span.sub-toggle {
 
 .et_right_sidebar.archive #main-content .container:before {
 	display: none;
+}
+
+.case_studies.et_pb_post {
+	margin-bottom: 0;
+}
+
+.page .full-width #content-area {
+	width: 100%;
 }

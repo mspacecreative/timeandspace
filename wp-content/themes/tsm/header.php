@@ -41,8 +41,9 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
-	<div id="page-container">
+	<?php if ( get_field( 'container_width' ) ) : ?>
+	<div id="page-container" class="full-width">
+	<?php endif; ?>
 <?php
 	if ( is_page_template( 'page-template-blank.php' ) ) {
 		return;

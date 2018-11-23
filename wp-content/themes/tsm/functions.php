@@ -67,12 +67,21 @@ function case_studyArchiveHome() {
     return ob_get_clean();
 }
 
+// CASE STUDIES ARCHIVE - FOR ARCHIVE PAGE
+function case_studyArchivePage() {
+    ob_start();
+    get_template_part('includes/case_studies_archive');
+    return ob_get_clean();
+}
+
 // ENQUEUE STYLES AND SCRIPTS
 add_action('init', 'styles_scripts');
 // HERO SLIDER
 add_shortcode('hero-slider', 'heroSlider');
 // CASE STUDIES ARCHIVE - HALF COLUMN SPLIT
 add_shortcode('case_studies_home', 'case_studyArchiveHome');
+// CASE STUDIES ARCHIVE - FOR ARCHIVE PAGE
+add_shortcode('case_studies_archive', 'case_studyArchivePage');
 // REMOVE PROJECTS CPT
 add_filter( 'et_project_posttype_args', 'mytheme_et_project_posttype_args', 10, 1 );
 // DEFAULT CASE STUDIES FEATURED IMAGE
