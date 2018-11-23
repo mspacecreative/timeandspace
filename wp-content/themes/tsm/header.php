@@ -43,6 +43,8 @@
 <body <?php body_class(); ?>>
 	<?php if ( get_field( 'container_width' ) ) : ?>
 	<div id="page-container" class="full-width">
+	<?php else : ?>
+	<div id="page-container">
 	<?php endif; ?>
 <?php
 	if ( is_page_template( 'page-template-blank.php' ) ) {
