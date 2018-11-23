@@ -27,6 +27,19 @@ Author URI: https://www.mspacecreative.com
 	width: 90%;
 }
 
+#et-main-area .container {
+	padding-top: 0;
+}
+
+.archive .et_pb_post {
+	margin-bottom: 0;
+}
+
+.archive #et-main-area .container {
+	max-width: none;
+	width: 100%;
+}
+
 .video h1:last-of-type {
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -2386,35 +2399,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 @media (max-width: 980px) {
 	.case-studies-content {
 	    padding: 80px 5%;
-	}
-	/*.page .et_pb_row, .single .et_pb_row, .et_right_sidebar #sidebar {
-		padding-right: 5%;
-		padding-left: 5%;
-	}
-	.home.page .et_pb_row, .page .cpt-header-area .et_pb_row {
-		padding-right: 0;
-		padding-left: 0;
-	}
-		
-}
-
-@media (max-device-width: 1024px) {
-	.page .et_pb_row, .single .et_pb_row {
-		padding-left: 5%;
-	}
-	
-	.page-template-page-full-width .et_pb_row {
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-	.et_right_sidebar #sidebar {
-		padding-right: 5%;
-	}
-	.home.page .et_pb_row, .page .cpt-header-area .et_pb_row {
-		padding-right: 0;
-		padding-left: 0;
-	}*/
-		
+	}	
 }
 
 @media (min-width: 767px) {
@@ -2428,7 +2413,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 		display: flex;
 		align-items: center;
 	}
-	.service-bucket-container:nth-child(even) .service-bg {
+	.service-bucket-container:nth-child(even) .service-bg, .archive article:nth-child(even) .service-bg {
 		order: 2;
 	}
 }
@@ -2545,4 +2530,8 @@ li.menu-item-has-children span.sub-toggle {
 .blurb-content-inner {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.et_right_sidebar.archive #main-content .container:before {
+	display: none;
 }
