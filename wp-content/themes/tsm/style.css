@@ -2511,13 +2511,7 @@ li.menu-item-has-children span.sub-toggle {
 	color: #83a138;
 }
 
-@media (max-device-width: 400px) {
-	.slick-arrow {
-		display: none!important;
-	}
-}
-
-@media (max-device-width: 812px) and (orientation: landscape) {
+@media (max-device-width: 812px) {
 	.slick-arrow {
 		display: none!important;
 	}
