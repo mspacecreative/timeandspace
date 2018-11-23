@@ -2367,8 +2367,11 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 }
 
 @media (max-width: 980px) {
-	.case-studies-content, .service-bg {
+	.case-studies-content {
 	    padding: 80px 5%;
+	}
+	.service-bg {
+	    padding: 30px 5%;
 	}
 	.page .et_pb_row, .single .et_pb_row, .et_right_sidebar #sidebar {
 		padding-right: 5%;
