@@ -2192,7 +2192,8 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 @media (max-width: 767px) {
 	.cpt-title h1 {
 		font-size: 23px;
-		padding: 8px 20px;
+		padding: 5px 15px;
+		border-radius: 5px 5px 0 0;
 	}
 	#footer-widgets .footer-widget:nth-child(1), #footer-widgets .footer-widget:nth-child(2) {
 		width: 50%!important;
@@ -2371,7 +2372,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 		padding-right: 5%;
 		padding-left: 5%;
 	}
-	.home.page .et_pb_row {
+	.home.page .et_pb_row, .page .cpt-header-area .et_pb_row {
 		padding-right: 0;
 		padding-left: 0;
 	}
