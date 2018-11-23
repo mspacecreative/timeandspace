@@ -1610,7 +1610,7 @@ body {
 	filter: grayscale(.25%) sepia(1) saturate(.5) brightness(80%) hue-rotate(250deg);*/
 	mix-blend-mode: color;
 	opacity: 1!important;
-	background-color: beige!important;
+	background-color: #a4ac9d!important;
 }
 
 .service-bucket-container:nth-child(even) .service-bucket .colour-overlay {
