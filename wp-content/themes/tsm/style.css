@@ -1648,16 +1648,13 @@ body {
 	width: 100%;
 	padding: 0;
 }
-.service-button {
-	border-bottom: 5px solid #fff;
-}
 .service-bucket-container:last-child .service-button {
 	border-bottom: none;
 }
 }
 
 .service-button {
-	margin: 25px 0;
+	margin: 25px 0 0;
 }
 .page-id-1076 .service-button {
 	margin-top: 0;
@@ -2370,9 +2367,6 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	.case-studies-content {
 	    padding: 80px 5%;
 	}
-	.service-bg {
-	    padding: 30px 5%;
-	}
 	.page .et_pb_row, .single .et_pb_row, .et_right_sidebar #sidebar {
 		padding-right: 5%;
 		padding-left: 5%;
@@ -2391,8 +2385,12 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 		float: left;
 		width: 50%;
 	}
+	.service-bucket-container {
+		display: flex;
+		align-items: center;
+	}
 	.service-bucket-container:nth-child(even) .service-bg {
-		float: right;
+		order: 2;
 	}
 }
 
@@ -2400,6 +2398,9 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 
 .post-navigation .half:nth-child(2n) {
 	width: 50%;
+}
+.service-bg {
+    padding: 50px 5%;
 }
 }
 
