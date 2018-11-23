@@ -2480,6 +2480,6 @@ li.menu-item-has-children span.sub-toggle {
 	}
 }
 
-#footer-widgets .footer-widget.current-menu-item a {
+#footer-widgets .footer-widget li.current-menu-item a {
 	color: #83a138;
 }
