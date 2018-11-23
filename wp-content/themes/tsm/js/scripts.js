@@ -1,14 +1,23 @@
+// SLIDER BLURB CONTAINER HEIGHT
+function blurbContainerHeight() {
+	var elementHeights = $('.blurb-inner').map(function() {
+		return $(this).height();
+	}).get();
+	
+	var maxHeight = Math.max.apply(null, elementHeights);
+	
+	$('.blurb-inner').css('min-height', (maxHeight));
+}
+
+
 // SERVICES SECTION IMAGE HEIGHT
 function serviceBucketHeight() {
 	$('.service-bucket').css('height', $('.service-bg').outerHeight());
 }
 
-function slicklistAdaptiveHeight() {
-	$('.slick-list').height($('.hero-slider').height());
-}
-
 $(window).resize(function () {
 	serviceBucketHeight();
+	blurbContainerHeight();
 });
 
 
@@ -24,7 +33,7 @@ $(document).ready(function () {
 	});
 	
 	serviceBucketHeight();
-	slicklistAdaptiveHeight();
+	blurbContainerHeight();
 	
 	$('.hero-slider, .solution_carousel').slick({
 	    //autoplay: true,

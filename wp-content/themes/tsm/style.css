@@ -1103,6 +1103,7 @@ body #page-container .et_pb_button.et_pb_bg_layout_dark, body #page-container .e
 
 .blurb-content {
 	max-width: 50%;
+	display: table;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1953,6 +1954,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	position: relative;
 	width: 80%;
 	z-index: 12;
+	display: table;
 }
 
 #page-container {
@@ -2507,4 +2509,9 @@ li.menu-item-has-children span.sub-toggle {
 
 .hero-slider .slick-list {
 	height: auto!important;
+}
+
+.blurb-content-inner {
+	display: table-cell;
+	vertical-align: middle;
 }

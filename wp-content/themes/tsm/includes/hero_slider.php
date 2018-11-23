@@ -6,25 +6,27 @@
 		<div class="hero-blurb">
 			<div class="blurb-inner">
 				<div class="blurb-content">
-					<!-- BLURB TEXT -->
-					<h1><?php the_sub_field('hero_blurb'); ?></h1>
-					<!-- /BLURB TEXT -->
-					
-					<?php if( have_rows('hero_button') ): 
-						while( have_rows('hero_button') ): the_row();
-						$label = get_sub_field('hero_button_label');
-						$link = get_sub_field('hero_button_link'); ?>
+					<div class="blurb-content-inner">
+						<!-- BLURB TEXT -->
+						<h1><?php the_sub_field('hero_blurb'); ?></h1>
+						<!-- /BLURB TEXT -->
 						
-						<!-- BLURB LINK -->
-						<?php if( $label ): ?>
-						<p class="hero-link">
-							<a href="<?php echo $link; ?>"><?php echo $label; ?></a>
-						</p>
-						<?php endif; ?>
-						<!-- /BLURB LINK -->
-						
-						<?php endwhile; 
-					endif; ?>
+						<?php if( have_rows('hero_button') ): 
+							while( have_rows('hero_button') ): the_row();
+							$label = get_sub_field('hero_button_label');
+							$link = get_sub_field('hero_button_link'); ?>
+							
+							<!-- BLURB LINK -->
+							<?php if( $label ): ?>
+							<p class="hero-link">
+								<a href="<?php echo $link; ?>"><?php echo $label; ?></a>
+							</p>
+							<?php endif; ?>
+							<!-- /BLURB LINK -->
+							
+							<?php endwhile; 
+						endif; ?>
+					</div>
 				</div>
 			</div>
 		</div>
