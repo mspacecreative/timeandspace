@@ -2499,12 +2499,12 @@ li.menu-item-has-children span.sub-toggle {
 
 @media (max-device-width: 400px) {
 	.slick-arrow {
-		display: none;
+		display: none!important;
 	}
 }
 
 @media (max-device-width: 812px) and (orientation: landscape) {
 	.slick-arrow {
-		display: none;
+		display: none!important;
 	}
 }
