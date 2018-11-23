@@ -1601,6 +1601,17 @@ body {
 
 .service-bucket {
 	background-size: cover!important;
+	background-blend-mode: luminosity;
+}
+
+.service-bucket-container:nth-child(odd) .service-bucket {
+	-webkit-filter: grayscale(.25%) sepia(1) saturate(.5) brightness(80%) hue-rotate(250deg);
+	filter: grayscale(.25%) sepia(1) saturate(.5) brightness(80%) hue-rotate(250deg);
+}
+
+.service-bucket-container:nth-child(even) .service-bucket {
+	filter: grayscale(100%) sepia(.5) brightness(80%) hue-rotate(0deg);
+	-webkit-filter: grayscale(100%) sepia(.5) brightness(80%) hue-rotate(0deg);
 }
 
 .page-id-1076 .service-container-wrap {
