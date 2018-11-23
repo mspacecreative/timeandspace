@@ -1,3 +1,13 @@
+// SERVICES SECTION IMAGE HEIGHT
+function serviceBucketHeight() {
+	$('.service-bucket').css('height', $('.service-bg').outerHeight());
+}
+
+$(window).resize(function () {
+	serviceBucketHeight();
+});
+
+
 $(document).ready(function () {
 	$('#sidebar .menu li.menu-item-has-children').prepend('<span class="sub-toggle"><i class="fa fa-angle-down"></i></span>');
 	$('span.sub-toggle').on('touchstart click', function (e) {
@@ -8,6 +18,8 @@ $(document).ready(function () {
 	$('span.sub-toggle').on('touchmove touchend', function () {
 	  return false;
 	});
+	
+	serviceBucketHeight();
 	
 	$('.hero-slider, .solution_carousel').slick({
 	    //autoplay: true,
@@ -24,7 +36,4 @@ $(document).ready(function () {
 	if ($('.the_solution_section').siblings().length == 0 ) { 
 		$('.the_solution_section').css('width', '100%');
 	}
-	
-	// SERVICES SECTION IMAGE HEIGHT
-	$('.service-bucket').css('height', $('.service-bg').outerHeight());
 });

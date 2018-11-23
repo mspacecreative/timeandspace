@@ -2371,17 +2371,14 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 }
 
 @media (min-width: 767px) {
-	.service-bucket-container {
-		display: flex;
-		align-items: center;
-	}
+	
 	
 	.service-bucket, .service-bg {
 		float: left;
 		width: 50%;
 	}
 	.service-bucket-container:nth-child(even) .service-bg {
-		order: 2;
+		float: right;
 	}
 }
 
