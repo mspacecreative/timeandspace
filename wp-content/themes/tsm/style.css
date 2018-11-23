@@ -1875,7 +1875,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 }
 
 .hero-slider {
-	height: 650px;
+	height: 100%;
 }
 
 .hero-slider div {
@@ -2088,7 +2088,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 		padding-top: 20%;
 	}
 	.hero-slider {
-		height: 400px;
+		height: 100%;
 	}
 	.blurb-content {
 		max-width: 80%;
