@@ -2013,6 +2013,11 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	background: rgb(88,82,123);
 }
 
+.services-section h2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
 .services-section img {
 	max-width: 70px;
 }
