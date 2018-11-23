@@ -2505,6 +2505,6 @@ li.menu-item-has-children span.sub-toggle {
 	}
 }
 
-.slick-list {
+.hero-slider .slick-list {
 	height: auto!important;
 }
