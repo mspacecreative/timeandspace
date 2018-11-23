@@ -1431,10 +1431,6 @@ body {
 	margin-right: 0;
 }
 
-#top-menu .menu-item-has-children > a:first-child:after, #et-secondary-nav .menu-item-has-children > a:first-child:after {
-    top: 23px!important;
-}
-
 #et-top-navigation {
 	z-index: 10000000;
 }
