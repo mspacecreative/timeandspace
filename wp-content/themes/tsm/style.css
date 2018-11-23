@@ -2479,3 +2479,7 @@ li.menu-item-has-children span.sub-toggle {
 		padding-top: 35%;
 	}
 }
+
+#footer-widgets .footer-widget.current-menu-item a {
+	color: #83a138;
+}
