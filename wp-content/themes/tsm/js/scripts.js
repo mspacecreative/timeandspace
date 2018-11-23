@@ -3,6 +3,10 @@ function serviceBucketHeight() {
 	$('.service-bucket').css('height', $('.service-bg').outerHeight());
 }
 
+function slicklistAdaptiveHeight() {
+	$('.slick-list').height($('.hero-slider').height());
+}
+
 $(window).resize(function () {
 	serviceBucketHeight();
 });
@@ -20,6 +24,7 @@ $(document).ready(function () {
 	});
 	
 	serviceBucketHeight();
+	slicklistAdaptiveHeight();
 	
 	$('.hero-slider, .solution_carousel').slick({
 	    //autoplay: true,

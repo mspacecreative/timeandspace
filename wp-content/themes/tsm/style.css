@@ -2504,3 +2504,7 @@ li.menu-item-has-children span.sub-toggle {
 		display: none!important;
 	}
 }
+
+.slick-list {
+	height: auto!important;
+}
