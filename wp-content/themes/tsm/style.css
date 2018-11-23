@@ -1551,7 +1551,7 @@ body {
 }
 
 .et_right_sidebar #main-content .container:before {
-    right: 30%!important;
+    right: 27.5%!important;
 }
 .et_right_sidebar #sidebar {
 	padding-left: 5%;
@@ -2241,6 +2241,11 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 .page #content-area {
 	max-width: 1140px;
 	margin: auto;
+	width: 90%;
+}
+
+.page-template-page-services.page #content-area {
+	width: 100%;
 }
 
 .page #content-area .et_pb_row {
@@ -2382,7 +2387,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	.case-studies-content {
 	    padding: 80px 5%;
 	}
-	.page .et_pb_row, .single .et_pb_row, .et_right_sidebar #sidebar {
+	/*.page .et_pb_row, .single .et_pb_row, .et_right_sidebar #sidebar {
 		padding-right: 5%;
 		padding-left: 5%;
 	}
@@ -2408,7 +2413,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	.home.page .et_pb_row, .page .cpt-header-area .et_pb_row {
 		padding-right: 0;
 		padding-left: 0;
-	}
+	}*/
 		
 }
 
