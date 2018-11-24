@@ -2532,3 +2532,21 @@ li.menu-item-has-children span.sub-toggle {
 .page .full-width #content-area {
 	width: 100%;
 }
+
+@media (max-width: 400px) {
+	.hero-slider {
+		height: 400px;
+	}
+}
+
+@media (max-width: 320px) {
+	.hero-slider h1 {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1366px) {
+	.hero-slider {
+		height: 600px;
+	}
+}

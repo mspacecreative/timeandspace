@@ -1,12 +1,12 @@
 // SLIDER BLURB CONTAINER HEIGHT
 /*function blurbContainerHeight() {
-	var elementHeights = $('.blurb-inner').map(function() {
+	var elementHeights = $('.slick-list').map(function() {
 		return $(this).height();
 	}).get();
 	
 	var maxHeight = Math.max.apply(null, elementHeights);
 	
-	$('.blurb-inner').css('min-height', (maxHeight));
+	$('.hero-bg-img').css('height', (maxHeight));
 }*/
 
 
