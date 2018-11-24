@@ -1,5 +1,5 @@
 // SLIDER BLURB CONTAINER HEIGHT
-function blurbContainerHeight() {
+/*function blurbContainerHeight() {
 	var elementHeights = $('.blurb-inner').map(function() {
 		return $(this).height();
 	}).get();
@@ -7,7 +7,7 @@ function blurbContainerHeight() {
 	var maxHeight = Math.max.apply(null, elementHeights);
 	
 	$('.blurb-inner').css('min-height', (maxHeight));
-}
+}*/
 
 
 // SERVICES SECTION IMAGE HEIGHT
@@ -17,7 +17,7 @@ function serviceBucketHeight() {
 
 $(window).resize(function () {
 	serviceBucketHeight();
-	blurbContainerHeight();
+	//blurbContainerHeight();
 });
 
 
@@ -33,7 +33,7 @@ $(document).ready(function () {
 	});
 	
 	serviceBucketHeight();
-	blurbContainerHeight();
+	//blurbContainerHeight();
 	
 	$('.hero-slider, .solution_carousel').slick({
 	    //autoplay: true,
