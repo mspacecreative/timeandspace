@@ -12,7 +12,8 @@
 
 // SERVICES SECTION IMAGE HEIGHT
 function serviceBucketHeight() {
-	$('.service-bucket').css('height', $('.service-bg').outerHeight());
+	var equalHeight = $('.service-bucket').siblings('.service-bg').outerHeight();
+	$('.service-bucket').css('height', equalHeight);
 }
 
 $(window).resize(function () {
