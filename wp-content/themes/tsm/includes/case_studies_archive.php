@@ -1,4 +1,4 @@
-<?php $loop = new WP_Query( array( 'post_type' => 'case_studies') ); 
+<?php $loop = new WP_Query( array( 'post_type' => 'case_studies', 'order' => 'ASC') ); 
 if ( $loop->have_posts() ) : ?>
 
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
