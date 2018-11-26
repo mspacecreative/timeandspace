@@ -2355,11 +2355,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	color: #000;
 }
 
-.case-studies-content-container:nth-child(even) .case-studies-feature-img {
-	order: 2;
-}
-
-.case-studies-content-container:nth-child(even) .case-studies-label {
+.case-studies-content-container:nth-child(odd) .case-studies-label {
 	left: 0;
 	right: auto;
 }
@@ -2405,11 +2401,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 		display: flex;
 		align-items: center;
 	}
-	.case-studies-home-container .case-studies-content-container:nth-child(even) .case-studies-feature-img {
-		order: 2;
-	}
-	
-	.page-id-601 .case-studies-home-container .case-studies-content-container:nth-child(even) .case-studies-content,.page-template-page-services .service-bucket-container:nth-child(even) .service-bg {
+	.case-studies-home-container .case-studies-content-container:nth-child(even) .case-studies-content, .page-id-601 .case-studies-home-container .case-studies-content-container:nth-child(even) .case-studies-content, .service-container-wrap-inner .service-bucket-container:nth-child(even) .service-bg {
 		order: 2;
 	}
 	
