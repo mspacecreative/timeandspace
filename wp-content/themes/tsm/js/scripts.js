@@ -15,7 +15,7 @@ function serviceBucketHeight() {
 	var bucketSibling = $('.service-bucket').siblings('.service-bg');
 	var equalHeight = $(bucketSibling).outerHeight();
 	$('.service-bucket').each(function () {
-		$(this).height(equalHeight);
+		$(this).find(bucketSibling).height(equalHeight);
 	});
 }
 
