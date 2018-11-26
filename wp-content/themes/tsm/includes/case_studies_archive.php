@@ -21,7 +21,7 @@ if ( $loop->have_posts() ) : ?>
 		<?php } else { ?>
 		<div class="service-bucket" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/backgrounds/case-studies.jpg); padding-bottom: 0;">
 		<?php } ?>
-			<div class="colour-overlay" style="background-color: <?php the_sub_field('colour_overlay'); ?>;"></div>
+			<div class="colour-overlay"></div>
 		</div>
 		
 	</div>

@@ -51,7 +51,7 @@ get_header();
 			  			</div>
 			  			
 			  			<div class="service-bucket" style="background: url('<?php the_sub_field('bucket_background_image'); ?>') no-repeat center center;">
-			  				<div class="colour-overlay" style="background-color: <?php the_sub_field('colour_overlay'); ?>;"></div>
+			  				<div class="colour-overlay"></div>
 			  			</div>
 			  			
 			  		</div>
