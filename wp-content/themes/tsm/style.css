@@ -2409,7 +2409,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 		order: 2;
 	}
 	
-	.page-id-601 .case-studies-home-container .case-studies-content-container:nth-child(even) .case-studies-content {
+	.page-id-601 .case-studies-home-container .case-studies-content-container:nth-child(even) .case-studies-content,.page-template-page-services .service-bucket-container:nth-child(even) .service-bg {
 		order: 2;
 	}
 	
