@@ -97,20 +97,21 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 								endif; ?>
 							</div>
 						</div>
-					</div>
-					
-					<!-- PAGINATION -->
-					<div class="post-navigation">
-						<div class="cpt-content-row clearfix">
-							<div class="half prev-link">
-								<?php previous_post_link('%link', 'Previous Case Study'); ?>
-							</div>
-							<div class="half next-link">
-								<?php next_post_link('%link', 'Next Case Study'); ?>
+						
+						<!-- PAGINATION -->
+						<div class="post-navigation">
+							<div class="cpt-content-row clearfix">
+								<div class="half prev-link">
+									<?php previous_post_link('%link', 'Previous Case Study'); ?>
+								</div>
+								<div class="half next-link">
+									<?php next_post_link('%link', 'Next Case Study'); ?>
+								</div>
 							</div>
 						</div>
+						<!-- END PAGINATION -->
+						
 					</div>
-					<!-- END PAGINATION -->
 					
 				</div>
 			
