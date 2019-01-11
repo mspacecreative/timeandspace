@@ -2,7 +2,7 @@
 		if ( $loop->have_posts() ) : ?>
 		
 		<div class="case-studies-home-container">
-	        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+	        <?php $i = 1; while ( $loop->have_posts() && $i < 2) : $loop->the_post(); ?>
 			
 			<div class="case-studies-content-container">
 				
