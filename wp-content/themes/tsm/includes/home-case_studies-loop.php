@@ -1,8 +1,9 @@
+<?php $number_of_posts = get_field('case_studies_posts_homepage'); ?>
 <?php $loop = new WP_Query( array( 'post_type' => 'case_studies', 'order' => 'ASC' ) );
 		if ( $loop->have_posts() ) : ?>
 		
 		<div class="case-studies-home-container">
-	        <?php $i = 1; while ( $loop->have_posts() && $i < 2) : $loop->the_post(); ?>
+	        <?php $i = 0; while ( $loop->have_posts() && $i < $number_of_posts) : $loop->the_post(); ?>
 			
 			<div class="case-studies-content-container">
 				
@@ -28,7 +29,7 @@
 			</div>
 	        
 	        
-	        <?php endwhile; ?>
+	        <?php $i++; endwhile; ?>
 		</div>
         <?php endif; 
         
