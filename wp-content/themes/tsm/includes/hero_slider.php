@@ -14,12 +14,21 @@
 						<?php if( have_rows('hero_button') ): 
 							while( have_rows('hero_button') ): the_row();
 							$label = get_sub_field('hero_button_label');
-							$link = get_sub_field('hero_button_link'); ?>
+							$link = get_sub_field('hero_button_link');
+							$externallink = get_sub_field('hero_button_external'); ?>
 							
 							<!-- BLURB LINK -->
-							<?php if( $label ): ?>
+							<?php if( $link ): ?>
 							<p class="hero-link">
 								<a href="<?php echo $link; ?>"><?php echo $label; ?></a>
+							</p>
+							<?php endif; ?>
+							<!-- /BLURB LINK -->
+							
+							<!-- BLURB EXTERNAL LINK -->
+							<?php if( $externallink ): ?>
+							<p class="hero-link">
+								<a href="<?php echo $externallink; ?>"><?php echo $label; ?></a>
 							</p>
 							<?php endif; ?>
 							<!-- /BLURB LINK -->
