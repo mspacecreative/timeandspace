@@ -2535,11 +2535,11 @@ li.menu-item-has-children span.sub-toggle {
 	}
 }
 
-#main-content.narrow .et_pb_row {
-	max-width: 850px;
-}
-
 #main-content.narrow .container {
 	max-width: none;
 	width: 100%;
+}
+
+.page #main-content.narrow #content-area .et_pb_row {
+	max-width: 850px;
 }
