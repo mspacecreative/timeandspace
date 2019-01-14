@@ -2543,3 +2543,7 @@ li.menu-item-has-children span.sub-toggle {
 .page #main-content.narrow .et_pb_row {
 	max-width: 850px;
 }
+
+.page #main-content.narrow #content-area .et_pb_row {
+	width: 100%;
+}
