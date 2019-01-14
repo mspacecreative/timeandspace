@@ -2534,3 +2534,7 @@ li.menu-item-has-children span.sub-toggle {
 		height: 600px;
 	}
 }
+
+#main-content.narrow .et_pb_row {
+	max-width: 850px;
+}
