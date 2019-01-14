@@ -6,7 +6,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 ?>
 
-<div id="main-content narrow">
+<div id="main-content" class="narrow">
 
 	<div class="container">
 		<div class="cpt-header-area">
