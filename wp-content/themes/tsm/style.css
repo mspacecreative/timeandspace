@@ -2540,6 +2540,6 @@ li.menu-item-has-children span.sub-toggle {
 	width: 100%;
 }
 
-.page #main-content.narrow #content-area .et_pb_row {
+.page #main-content.narrow .et_pb_row {
 	max-width: 850px;
 }
