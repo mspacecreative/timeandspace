@@ -2145,8 +2145,11 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 }
 
 @media (min-width: 981px) {
-	.the_challenge_section, .the_summary_section, .the_solution_section, .solution_carousel {
+	.the_challenge_section, .the_summary_section {
 		float: left;
+	}
+	.solution_carousel {
+		float: right;
 	}
 	.single-case_studies .et_pb_post {
 		margin-bottom: 0;
@@ -2158,7 +2161,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	.cpt-title h1 span.hide-on-desktop {
 		display: none;
 	}
-	#main-content .the_summary_section, .the_solution_section {
+	#main-content .the_summary_section {
 		width: 47.5%;
 		margin-right: 5%;
 	}

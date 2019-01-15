@@ -68,25 +68,28 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 						<div class="cpt-content-row clearfix display-flex">
 							
 							<div class="the_solution_section">
+								
+								<!-- PHOTO GALLERY -->
+								<?php 
+								$images = get_field('solution_gallery');
+								$size = 'large'; // (thumbnail, medium, large, full or custom size)
+								
+								if( $images ): ?>
+								<div class="solution_carousel">
+								    <?php foreach( $images as $image ): ?>
+								    <div>
+										<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+								    </div>
+								    <?php endforeach; ?>
+								</div>
+								<?php endif; ?>
+								<!-- / PHOTO GALLERY -->
+								
 								<h2><?php _e('Solution'); ?></h2>
 								<?php if ( get_field('the_solution') ):
 									the_field('the_solution');
 								endif; ?>
 							</div>
-							
-							<?php 
-							$images = get_field('solution_gallery');
-							$size = 'large'; // (thumbnail, medium, large, full or custom size)
-							
-							if( $images ): ?>
-							<div class="solution_carousel">
-							    <?php foreach( $images as $image ): ?>
-							    <div>
-									<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
-							    </div>
-							    <?php endforeach; ?>
-							</div>
-							<?php endif; ?>
 							
 						</div>
 						
