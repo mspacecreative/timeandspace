@@ -2071,6 +2071,9 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	background: #fff;
 	margin-bottom: 0;
 	border-radius: 10px 10px 0 0;
+}
+
+.single .cpt-title h1 {
 	width: 100%;
 }
 
