@@ -37,7 +37,7 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 					}
 				?>
 
-						<p id="footer-info">&copy; <?php date('Y'); ?> TIME + SPACE MEDIA LTD. 2570 AGRICOLA STREET, HALIFAX, NS, B3K 4C6 &nbsp;&nbsp;902-429-8463 &nbsp;&nbsp;<a href="mailto:info@timespacemedia.com">INFO@TIMESPACEMEDIA.COM</a></p>
+						<p id="footer-info">&copy; <?php echo date('Y'); ?> TIME + SPACE MEDIA LTD. 2570 AGRICOLA STREET, HALIFAX, NS, B3K 4C6 &nbsp;&nbsp;902-429-8463 &nbsp;&nbsp;<a href="mailto:info@timespacemedia.com">INFO@TIMESPACEMEDIA.COM</a></p>
 					</div>	<!-- .container -->
 				</div>
 			</footer> <!-- #main-footer -->
