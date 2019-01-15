@@ -2588,6 +2588,10 @@ li.menu-item-has-children span.sub-toggle {
 	margin-left: 20px;
 }
 
+.page #content-area .et_pb_row.line-rule-right {
+	padding-bottom: 0;
+}
+
 .line-rule-right .et_pb_text_inner {
 	overflow: hidden;
 }
