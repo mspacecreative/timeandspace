@@ -2101,6 +2101,10 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	.case-studies-feature-img {
 		height: 300px;
 	}
+	.cpt-content-row {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 @media (max-width: 666px) {
