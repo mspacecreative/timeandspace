@@ -662,6 +662,15 @@ h2 {
 	margin-bottom: 15px;
 }
 
+.services-section:before {
+	content: '';
+	background: rgba(24,42,84,0.95);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 #main-content .services-section p {
 	font-size: 20px;
 }
