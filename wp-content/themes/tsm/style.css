@@ -2440,6 +2440,10 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	background: #182a54;
 }
 
+.post-navigation .cpt-content-row {
+	padding: 30px;
+}
+
 .half {
 	float: left;
 	width: 45%;
