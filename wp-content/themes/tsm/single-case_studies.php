@@ -45,7 +45,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 			<?php if (et_get_option('divi_integration_single_top') <> '' && et_get_option('divi_integrate_singletop_enable') == 'on') echo(et_get_option('divi_integration_single_top')); ?>
 							
 				<div class="cpt-inner">
-					<!-- THE CHALLENGE / THE SOLUTION -->
+					<!-- THE SUMMARY -->
 					<div class="cpt-content-section">
 						<div class="cpt-content-row clearfix display-fex">
 							<div class="the_summary_section">
@@ -54,15 +54,20 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 									<?php the_content(); ?>
 								</article> <!-- .et_pb_post -->
 							</div>
-							<div class="the_challenge_section">
-								<h2><?php _e('Challenge'); ?></h2>
-								<?php if ( get_field('the_challenge') ):
-									the_field('the_challenge');
-								endif; ?>
-							</div>
 						</div>
 					</div>
-					<!-- /THE CHALLENGE / THE SOLUTION -->
+					<!-- / THE SUMMARY -->
+					
+					<!-- THE CHALLENGE -->
+					<div class="the_challenge_section">
+						<div class="cpt-content-row">
+							<h2><?php _e('Challenge'); ?></h2>
+							<?php if ( get_field('the_challenge') ):
+								the_field('the_challenge');
+							endif; ?>
+						</div>
+					</div>
+					<!-- / THE CHALLENGE -->
 					
 					<div class="cpt-content-section cpt-content-section-solution">
 						<div class="cpt-content-row clearfix display-flex">
