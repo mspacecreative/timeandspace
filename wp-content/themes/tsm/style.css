@@ -2144,12 +2144,17 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	padding-top: 5px;
 }
 
+.solution_carousel {
+	margin: 0 0 25px;
+}
+
 @media (min-width: 981px) {
 	.the_challenge_section, .the_summary_section {
 		float: left;
 	}
 	.solution_carousel {
 		float: right;
+		margin: 50px 0 50px 25px;
 	}
 	.single-case_studies .et_pb_post {
 		margin-bottom: 0;
