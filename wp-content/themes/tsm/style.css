@@ -2595,3 +2595,7 @@ li.menu-item-has-children span.sub-toggle {
 .line-rule-right .et_pb_text_inner {
 	overflow: hidden;
 }
+
+.page-id-601.page #content-area .et_pb_row {
+	padding: 0;
+}
