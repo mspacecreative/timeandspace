@@ -59,12 +59,14 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					<!-- / THE SUMMARY -->
 					
 					<!-- THE CHALLENGE -->
-					<div class="the_challenge_section">
+					<div class="cpt-content-section challenge">
 						<div class="cpt-content-row">
-							<h2><?php _e('Challenge'); ?></h2>
-							<?php if ( get_field('the_challenge') ):
-								the_field('the_challenge');
-							endif; ?>
+							<div class="the_challenge_section">
+								<h2><?php _e('Challenge'); ?></h2>
+								<?php if ( get_field('the_challenge') ):
+									the_field('the_challenge');
+								endif; ?>
+							</div>
 						</div>
 					</div>
 					<!-- / THE CHALLENGE -->
