@@ -2253,6 +2253,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 
 .page #content-area .et_pb_row {
 	max-width: 1140px;
+	padding: 0 30px;
 }
 
 #sidebar .menu li.menu-item-has-children ul {
@@ -2379,7 +2380,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	.case-studies-feature-img {
 		height: 300px;
 	}
-	.cpt-content-row {
+	.cpt-content-row, .page #content-area .et_pb_row {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
