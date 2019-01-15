@@ -2135,9 +2135,9 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 }
 
 .cpt-content-row {
-	max-width: 1140px;
+	max-width: 850px;
 	margin: auto;
-	padding: 50px 0;
+	padding: 50px 30px;
 }
 
 .cpt-title h1 span {
@@ -2432,6 +2432,10 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 }
 }
 
+.post-navigation {
+	background: #182a54;
+}
+
 .half {
 	float: left;
 	width: 45%;
@@ -2458,6 +2462,10 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
     top: 0;
     position: relative;
     font-size: 13px;
+}
+
+.post-navigation a {
+	color: #fff;
 }
 
 .prev-link a:before {
