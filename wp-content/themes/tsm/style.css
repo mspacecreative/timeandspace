@@ -2411,6 +2411,13 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 .service-bg {
     padding: 50px 5%;
 }
+
+.single-case_studies .et_pb_post h2 {
+	font-size: 18px;
+}
+.the_summary_section article h2:after {
+	top: 15px;
+}
 }
 
 @media only screen and (min-width: 768px)
