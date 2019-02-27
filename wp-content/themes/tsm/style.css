@@ -1629,10 +1629,10 @@ body {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	.case-studies-home-container .case-studies-content-container:nth-child(odd) .case-studies-feature-img .colour-overlay {
-	  background-color: rgba(165, 175, 155, .85);
+	  background-color: rgb(165, 175, 155);
 	}
 	.service-bucket-container:nth-child(even) .service-bucket .colour-overlay, .case-studies-home-container .case-studies-content-container:nth-child(even) .colour-overlay {
-		background-color: rgba(80, 65, 80, .85);
+		background-color: rgb(80, 65, 80);
 	}
 }
 
@@ -1709,7 +1709,7 @@ body {
 	height: 100%;
 	top: 0;
 	left: 0;
-	opacity: .5;
+	opacity: .85;
 }
 
 .service-description h1 {
