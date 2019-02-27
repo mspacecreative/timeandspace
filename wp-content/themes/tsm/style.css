@@ -1627,7 +1627,7 @@ body {
 	
 }*/
 
-.case-studies-home-container .case-studies-content-containernth-child(odd) .case-studies-feature-img {
+.case-studies-home-container .case-studies-content-container:nth-child(odd) .case-studies-feature-img {
 	background-blend-mode: luminosity;
 	background-color: rgb(165, 175, 155);
 }
