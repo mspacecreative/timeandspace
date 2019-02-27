@@ -1614,7 +1614,7 @@ body {
 	background-blend-mode: luminosity;
 }
 
-.service-bucket-container:nth-child(odd) .service-bucket .colour-overlay, .case-studies-home-container .case-studies-content-container:nth-child(odd) .colour-overlay {
+/*.service-bucket-container:nth-child(odd) .service-bucket .colour-overlay, .case-studies-home-container .case-studies-content-container:nth-child(odd) .colour-overlay {
 	mix-blend-mode: color;
 	opacity: 1;
 	background-color: #a4ac9d;
@@ -1624,6 +1624,17 @@ body {
 	mix-blend-mode: color;
 	opacity: 1;
 	background-color: #514151;
+	
+}*/
+
+.case-studies-home-container .case-studies-feature-img:nth-child(odd) {
+	background-blend-mode: luminosity;
+	background-color: rgb(165, 175, 155);
+}
+
+.case-studies-home-container .case-studies-feature-img:nth-child(even) {
+	background-blend-mode: luminosity;
+	background-color: rgb(80	, 65, 80);
 	
 }
 
