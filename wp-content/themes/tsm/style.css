@@ -1627,12 +1627,12 @@ body {
 	
 }*/
 
-.case-studies-home-container .case-studies-feature-img:nth-child(odd) {
+.case-studies-home-container:nth-child(odd) .case-studies-feature-img:nth-child(even) {
 	background-blend-mode: luminosity;
 	background-color: rgb(165, 175, 155);
 }
 
-.case-studies-home-container .case-studies-content-container:nth-child(even) {
+.case-studies-home-container:nth-child(even) .case-studies-feature-img:nth-child(odd) {
 	background-blend-mode: luminosity;
 	background-color: rgb(80	, 65, 80);
 	
