@@ -14,10 +14,10 @@
 						<?php endif; ?>
 						<?php
 						$image = get_sub_field('image_content');
-						$size = 'medium';
-						if ( $image ) {
-						echo wp_get_attachment_image( $image, $size );
-						} ?>
+						$size = 'large';
+						if ( $image ) : ?>
+						<div class="hero-text-img"><?php echo wp_get_attachment_image( $image, $size ); ?></div>
+						<?php endif; ?>
 						<!-- /BLURB TEXT -->
 						
 						<?php if( have_rows('hero_button') ): 
