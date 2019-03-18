@@ -7,8 +7,16 @@
 			<div class="blurb-inner">
 				<div class="blurb-content">
 					<div class="blurb-content-inner">
+						
 						<!-- BLURB TEXT -->
+						<?php if ( get_sub_field('hero_blurb') ) : ?>
 						<h1><?php the_sub_field('hero_blurb'); ?></h1>
+						<?php
+						$image = get_field('image_content');
+						$size = 'medium';
+						elseif ( $image ):
+						echo wp_get_attachment_image( $image, $size );
+						endif; ?>
 						<!-- /BLURB TEXT -->
 						
 						<?php if( have_rows('hero_button') ): 
