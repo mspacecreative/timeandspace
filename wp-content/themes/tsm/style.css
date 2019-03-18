@@ -2577,6 +2577,14 @@ li.menu-item-has-children span.sub-toggle {
 	}
 }*/
 
+.hero-text-img {
+	width: 50%;
+}
+
+.hero-text-img img {
+	width: 100%;
+}
+
 #main-content.narrow .container {
 	max-width: none;
 	width: 100%;
