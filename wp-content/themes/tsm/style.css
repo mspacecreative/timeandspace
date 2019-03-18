@@ -2571,11 +2571,11 @@ li.menu-item-has-children span.sub-toggle {
 	}
 }
 
-@media (min-width: 769px) and (max-width: 1366px) {
+/*@media (min-width: 769px) and (max-width: 1366px) {
 	.hero-slider {
 		height: 600px;
 	}
-}
+}*/
 
 #main-content.narrow .container {
 	max-width: none;
