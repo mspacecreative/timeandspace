@@ -12,7 +12,7 @@
 						<?php if ( get_sub_field('hero_blurb') ) : ?>
 						<h1><?php the_sub_field('hero_blurb'); ?></h1>
 						<?php
-						$image = get_field('image_content');
+						$image = get_sub_field('image_content');
 						$size = 'medium';
 						elseif ( $image ):
 						echo wp_get_attachment_image( $image, $size );
