@@ -26,11 +26,11 @@ function styles_scripts() {
 	wp_enqueue_script('scripts');
 }
  
-function override_divi() {
+/*function override_divi() {
   remove_action('et_header_top','et_add_mobile_navigation');
   add_action('et_header_top', 'et_add_mobile_navigation_mod');
 }
-add_action('after_setup_theme','override_divi');
+add_action('after_setup_theme','override_divi');*/
 
 // REMOVE PROJECTS CPT
 function mytheme_et_project_posttype_args( $args ) {
