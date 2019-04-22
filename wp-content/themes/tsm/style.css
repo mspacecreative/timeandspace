@@ -1993,7 +1993,20 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	position: relative!important;
 }
 
-.cpt-header-area:before, .hero-bg-img:before, #main-footer:before, .case-studies-feature-img:before, .service-bucket:before {
+/*.cpt-header-area:before, .hero-bg-img:before, #main-footer:before, .case-studies-feature-img:before, .service-bucket:before {
+	content: '';
+	background: url(images/overlays/logo-icon-hero-overlay.png)no-repeat top	 right;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: 9;
+	background-size: 40%;
+	opacity: .75;
+}*/
+
+.cpt-header-area:before, #main-footer:before, .case-studies-feature-img:before, .service-bucket:before {
 	content: '';
 	background: url(images/overlays/logo-icon-hero-overlay.png)no-repeat top	 right;
 	position: absolute;
