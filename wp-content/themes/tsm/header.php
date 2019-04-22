@@ -22,10 +22,6 @@
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	
-	<!--OVERLAYING SLIDESHOW-->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<!--END OVERLAYING SLIDESHOW-->
-	
 	<!--FITIE-->
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/fitie.js" type="text/javascript"></script>
 
