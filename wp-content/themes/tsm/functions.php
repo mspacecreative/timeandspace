@@ -29,11 +29,6 @@ function styles_scripts() {
 	wp_register_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
 	wp_enqueue_script('scripts');
 }
-
-// if site is set to run on SSL, then force-enable SSL detection!
-if (stripos(get_option('siteurl'), 'https://') === 0) {
-    $_SERVER['HTTPS'] = 'on';
-}
  
 /*function override_divi() {
   remove_action('et_header_top','et_add_mobile_navigation');
