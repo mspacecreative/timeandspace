@@ -16,13 +16,13 @@ function serviceBucketHeight() {
 	$('.service-bucket').css('height', equalHeight);
 }
 
-$(window).resize(function () {
+jQuery(window).resize(function($) {
 	serviceBucketHeight();
 	//blurbContainerHeight();
 });
 
 
-$(document).ready(function () {
+jQuery(document).ready(function($) {
 	$('#sidebar .menu li.menu-item-has-children').prepend('<span class="sub-toggle"><i class="fa fa-angle-down"></i></span>');
 	$('span.sub-toggle').on('touchstart click', function (e) {
 	  e.preventDefault();
