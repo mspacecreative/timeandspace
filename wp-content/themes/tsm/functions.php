@@ -10,6 +10,10 @@ function et_add_mobile_navigation_mod() {
   echo '<div id="et_mobile_nav_menu"><span class="mobile_menu_bar shiftnav-toggle" data-shiftnav-target="shiftnav-main"></span></div>';
 }
 
+function googleMap() {
+	wp_register_script( 'google-maps-api', esc_url_raw( add_query_arg( array( 'v' => 3, 'key' => et_pb_get_google_api_key() ), is_ssl() ? 'https://maps.googleapis.com/maps/api/js' : 'https://maps.googleapis.com/maps/api/js' ) ), array(), ET_BUILDER_VERSION, true );
+}
+
 /* STYLES AND SCRIPTS */
 function styles_scripts() {
 	
@@ -86,3 +90,5 @@ add_shortcode('case_studies_archive', 'case_studyArchivePage');
 add_filter( 'et_project_posttype_args', 'mytheme_et_project_posttype_args', 10, 1 );
 // DEFAULT CASE STUDIES FEATURED IMAGE
 add_option( 'my_default_pic', get_stylesheet_directory_uri() . '/images/backgrounds/case-studies.jpg', '', 'yes' );
+// GOOGLE MAP API
+add_action( 'wp_enqueue_scripts', 'googleMap', 11 );
