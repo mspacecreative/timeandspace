@@ -7,7 +7,7 @@
 	var maxHeight = Math.max.apply(null, elementHeights);
 	
 	$('.hero-bg-img').css('height', (maxHeight));
-}*/
+}
 
 ;(function equalHeightColumns($){
     var equalHeight = $('.service-bucket').siblings('.service-bg').outerHeight();
@@ -17,7 +17,7 @@
 jQuery(window).resize(function($) {
 	equalHeightColumns();
 	//blurbContainerHeight();
-});
+});*/
 
 
 jQuery(document).ready(function($) {
@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
 	  return false;
 	});
 	
-	equalHeightColumns();
+	//equalHeightColumns();
 	//blurbContainerHeight();
 	
 	$('.hero-slider, .solution_carousel').slick({
