@@ -1919,6 +1919,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	background-position: center;
 }
 
 .slick-arrow {
