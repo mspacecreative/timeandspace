@@ -9,9 +9,13 @@
 	$('.hero-bg-img').css('height', (maxHeight));
 }*/
 
+;(function equalHeightColumns($){
+    var equalHeight = $('.service-bucket').siblings('.service-bg').outerHeight();
+    $('.service-bucket').css('height', equalHeight);
+})(jQuery);
+
 jQuery(window).resize(function($) {
-	var equalHeight = $('.service-bucket').siblings('.service-bg').outerHeight();
-	$('.service-bucket').css('height', equalHeight);
+	equalHeightColumns();
 	//blurbContainerHeight();
 });
 
@@ -27,8 +31,7 @@ jQuery(document).ready(function($) {
 	  return false;
 	});
 	
-	var equalHeight = $('.service-bucket').siblings('.service-bg').outerHeight();
-	$('.service-bucket').css('height', equalHeight);
+	equalHeightColumns();
 	//blurbContainerHeight();
 	
 	$('.hero-slider, .solution_carousel').slick({
