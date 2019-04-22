@@ -14,6 +14,10 @@ function googleMap() {
 	wp_register_script( 'google-maps-api', esc_url_raw( add_query_arg( array( 'v' => 3, 'key' => et_pb_get_google_api_key() ), is_ssl() ? 'https://maps.googleapis.com/maps/api/js' : 'https://maps.googleapis.com/maps/api/js' ) ), array(), ET_BUILDER_VERSION, true );
 }
 
+if ( et_pb_enqueue_google_maps_script() ) {
+	wp_enqueue_script( 'google-maps-api', esc_url_raw( add_query_arg( array( 'v' => 3, 'key' => et_pb_get_google_api_key() ), is_ssl() ? 'https://maps.googleapis.com/maps/api/js' : 'https://maps.googleapis.com/maps/api/js' ) ), array(), '3', true );
+}
+
 /* STYLES AND SCRIPTS */
 function styles_scripts() {
 	
