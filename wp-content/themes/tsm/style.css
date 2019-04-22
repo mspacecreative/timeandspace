@@ -1956,9 +1956,11 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	left: 25px;
 }
 
+/*
+HERO BLURB GRADIENT BACKGROUND
 .hero-blurb {
 	background: linear-gradient(90deg, rgba(24,42,84, .9)40%, rgba(255,255,255,0));
-}
+}*/
 
 .hero-blurb {
 	padding: 15% 0 10%;
