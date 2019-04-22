@@ -9,15 +9,9 @@
 	$('.hero-bg-img').css('height', (maxHeight));
 }*/
 
-
-// SERVICES SECTION IMAGE HEIGHT
-function serviceBucketHeight() {
+jQuery(window).resize(function($) {
 	var equalHeight = $('.service-bucket').siblings('.service-bg').outerHeight();
 	$('.service-bucket').css('height', equalHeight);
-}
-
-jQuery(window).resize(function($) {
-	serviceBucketHeight();
 	//blurbContainerHeight();
 });
 
@@ -33,7 +27,8 @@ jQuery(document).ready(function($) {
 	  return false;
 	});
 	
-	serviceBucketHeight();
+	var equalHeight = $('.service-bucket').siblings('.service-bg').outerHeight();
+	$('.service-bucket').css('height', equalHeight);
 	//blurbContainerHeight();
 	
 	$('.hero-slider, .solution_carousel').slick({
