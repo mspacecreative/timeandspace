@@ -1892,7 +1892,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	top: 0!important;
 }
 
-.header-switch #main-header {
+.header-switch #main-header, .header-switch #main-footer {
 	z-index: 9;
 }
 
