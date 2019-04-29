@@ -1891,7 +1891,7 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 
 #main-header {
 	position: fixed;
-	top: 30px!important;
+	/*top: 30px!important;*/
 	background: rgba(255, 255, 255, .9);
 }
 
