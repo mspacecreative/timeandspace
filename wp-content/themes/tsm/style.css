@@ -1892,6 +1892,10 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	top: 0!important;
 }
 
+.header-switch #main-header {
+	z-index: 9;
+}
+
 .et-fixed-header #logo {
 	width: 150px;
 }
