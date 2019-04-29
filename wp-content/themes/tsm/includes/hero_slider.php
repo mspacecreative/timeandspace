@@ -3,9 +3,14 @@
 	
 	<?php while ( have_rows('hero_slider') ) : the_row(); ?>
 	<div class="hero-bg-img" style="background-image: url(<?php the_sub_field('hero_background_image'); ?>);">
-		<?php if ( get_sub_field('hero_button_link') ): ?>
+		<?php 
+		if( have_rows('hero_button') ): 
+		while( have_rows('hero_button') ): the_row();
+		$imglink = get_sub_field('hero_button_link'); ?>
 		<a style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" href="<?php the_sub_field('hero_button_link'); ?>"></a>
-		<?php endif; ?>
+		<?php 
+		endwhile;
+		endif; ?>
 		<div class="hero-blurb">
 			<div class="blurb-inner">
 				<div class="blurb-content">
