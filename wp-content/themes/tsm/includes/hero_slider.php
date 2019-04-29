@@ -4,7 +4,7 @@
 	<?php while ( have_rows('hero_slider') ) : the_row(); ?>
 	<div class="hero-bg-img">
 		<?php
-		$bgimg = get_sub_field('hero_background_image') ):
+		$bgimg = get_sub_field('hero_background_image');
 		$bgimgsize = 'large'
 		if ( $bgimg ) : ?>
 			<?php echo wp_get_attachment_image( $bgimg, $bgimgsize );
