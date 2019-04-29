@@ -13,9 +13,11 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 			<?php 
 			$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
 			if (has_post_thumbnail( $post->ID ) ) { ?>
-			<div class="et_pb_section" style="background-image: url(<?php echo $image ?>); padding-bottom: 0;">
+			<div class="et_pb_section" style="padding-bottom: 0;">
+			<?php echo the_post_thumbnail('full'); ?>
 			<?php } else { ?>
-			<div class="et_pb_section" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/backgrounds/case-studies.jpg); padding-bottom: 0;">
+			<div class="et_pb_section" style="padding-bottom: 0;">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/backgrounds/case-studies.jpg" />
 			<?php } ?>
 				<?php if ( get_field('hide_page_title') ): ?>
 				<div class="et_pb_row hide-page-title" style="padding-bottom: 0;">
