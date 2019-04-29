@@ -2575,11 +2575,11 @@ li.menu-item-has-children span.sub-toggle {
 	width: 100%;
 }
 
-@media (max-width: 400px) {
+/*@media (max-width: 400px) {
 	.hero-slider {
 		height: 400px;
 	}
-}
+}*/
 
 @media (max-width: 320px) {
 	.hero-slider h1 {
