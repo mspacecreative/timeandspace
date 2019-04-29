@@ -34,10 +34,12 @@ jQuery(document).ready(function($) {
 	//equalHeightColumns();
 	//blurbContainerHeight();
 	
-	$('.hero-slider, .solution_carousel').slick({
-	    //autoplay: true,
-		dots: true,
-		adaptiveHeight: true,
+	$(window).load(function() {
+		$('.hero-slider, .solution_carousel').slick({
+		    //autoplay: true,
+			dots: true,
+			adaptiveHeight: true,
+		});
 	});
 	
 	// PAGINATION LINKS
