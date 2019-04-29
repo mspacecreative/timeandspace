@@ -10,7 +10,7 @@
 		$imgexternal = get_sub_field('hero_button_external');
 		if( $imglink ): ?>
 		<a style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" href="<?php echo $imglink; ?>"></a>
-		<?php else : ?>
+		<?php elseif ( $imgexternal ): ?>
 		<a target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" href="<?php echo $imgexternal; ?>"></a>
 		<?php
 		endif;
