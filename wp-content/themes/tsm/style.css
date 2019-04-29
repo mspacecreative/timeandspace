@@ -1480,6 +1480,11 @@ body {
 	position: static!important;
 }
 
+.cpt-header-area .et_pb_row {
+	position: relative;
+	bottom: 52px;
+}
+
 .buckets .et_pb_promo_description p {
 	max-width: 65%;
 	margin: 15px auto;
