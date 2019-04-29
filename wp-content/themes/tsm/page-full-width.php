@@ -18,7 +18,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 			<?php echo the_post_thumbnail('header-tall'); ?>
 			<?php } else { ?>
 			<div class="et_pb_section" style="padding-bottom: 0;">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/backgrounds/case-studies.jpg" />
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/backgrounds/case-studies-tall.jpg" />
 			<?php } 
 			else : 
 			if (has_post_thumbnail( $post->ID ) ) { ?>
