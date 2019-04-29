@@ -47,6 +47,15 @@ function mytheme_et_project_posttype_args( $args ) {
 	));
 }
 
+// FIX MEDIA LIBRARY UPLOAD
+function wpb_image_editor_default_to_gd( $editors ) {
+    $gd_editor = 'WP_Image_Editor_GD';
+    $editors = array_diff( $editors, array( $gd_editor ) );
+    array_unshift( $editors, $gd_editor );
+    return $editors;
+}
+add_filter( 'wp_image_editors', 'wpb_image_editor_default_to_gd' );
+
 // CUSTOM IMAGE CROP
 add_image_size( 'profile', 300, 449, array( 'left', 'top' ) );
 add_image_size( 'header', 1600, 401, array( 'center', 'center' ) );
