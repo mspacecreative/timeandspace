@@ -33,27 +33,27 @@
 						<?php endif; ?>
 						<!-- /BLURB TEXT -->
 						
-						<?php if( have_rows('hero_button') ): 
+						<!--<?php if( have_rows('hero_button') ): 
 							while( have_rows('hero_button') ): the_row();
 							$label = get_sub_field('hero_button_label');
 							$link = get_sub_field('hero_button_link');
 							$externallink = get_sub_field('hero_button_external'); ?>
 							
-							<!-- BLURB LINK -->
+							BLURB LINK
 							<?php if( $link ): ?>
 							<p class="hero-link">
 								<a href="<?php echo $link; ?>"><?php echo $label; ?></a>
 							</p>
 							<?php endif; ?>
-							<!-- /BLURB LINK -->
+							/ BLURB LINK
 							
-							<!-- BLURB EXTERNAL LINK -->
+							BLURB EXTERNAL LINK
 							<?php if( $externallink ): ?>
 							<p class="hero-link">
 								<a href="<?php echo $externallink; ?>"><?php echo $label; ?></a>
 							</p>
 							<?php endif; ?>
-							<!-- /BLURB LINK -->
+							/BLURB LINK -->
 							
 							<?php endwhile; 
 						endif; ?>
