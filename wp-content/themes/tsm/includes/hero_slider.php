@@ -5,7 +5,7 @@
 	<div class="hero-bg-img">
 		<?php
 		$image = get_sub_field('hero_background_image');
-		$size = 'large';
+		$size = 'full';
 		if ( $image ) : ?>
 			<?php echo wp_get_attachment_image( $image, $size );
 		endif;
