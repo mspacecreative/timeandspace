@@ -14,7 +14,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 			$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
 			if ( get_field( 'taller_header_image' ) ) :
 			if (has_post_thumbnail( $post->ID ) ) { ?>
-			<div class="et_pb_section" style="padding-bottom: 25%; height: 0; padding-top: 0;">
+			<div class="et_pb_section" style="padding-bottom: 40%; height: 0; padding-top: 0;">
 			<?php echo the_post_thumbnail('header'); ?>
 			<?php } else { ?>
 			<div class="et_pb_section" style="padding-bottom: 0;">
