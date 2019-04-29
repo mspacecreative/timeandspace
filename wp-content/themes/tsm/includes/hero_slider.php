@@ -4,10 +4,10 @@
 	<?php while ( have_rows('hero_slider') ) : the_row(); ?>
 	<div class="hero-bg-img">
 		<?php
-		$bgimg = get_sub_field('hero_background_image');
-		$bgimgsize = 'large'
-		if ( $bgimg ) : ?>
-			<?php echo wp_get_attachment_image( $bgimg, $bgimgsize );
+		$image = get_sub_field('hero_background_image');
+		$size = 'large';
+		if ( $image ) : ?>
+			<?php echo wp_get_attachment_image( $image, $size );
 		endif;
 		if( have_rows('hero_button') ): 
 		while( have_rows('hero_button') ): the_row();
