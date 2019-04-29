@@ -1483,6 +1483,7 @@ body {
 .cpt-header-area .et_pb_row {
 	position: relative;
 	bottom: 52px;
+	padding-top: 0;
 }
 
 .buckets .et_pb_promo_description p {
@@ -2091,7 +2092,7 @@ HERO BLURB GRADIENT BACKGROUND
 }
 
 .cpt-title {
-	padding-top: 15%;
+	/*padding-top: 15%;*/
 	position: relative;
 	z-index: 9;
 	line-height: 1.4em;
