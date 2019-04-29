@@ -6,9 +6,14 @@
 		<?php 
 		if( have_rows('hero_button') ): 
 		while( have_rows('hero_button') ): the_row();
-		$imglink = get_sub_field('hero_button_link'); ?>
-		<a style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" href="<?php the_sub_field('hero_button_link'); ?>"></a>
-		<?php 
+		$imglink = get_sub_field('hero_button_link');
+		$imgexternal = get_sub_field('hero_button_external');
+		if( $imglink ): ?>
+		<a style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" href="<?php echo $imglink; ?>"></a>
+		<?php elseif : ?>
+		<a target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" href="<?php echo $imgexternal; ?>"></a>
+		<?php
+		endif;
 		endwhile;
 		endif; ?>
 		<div class="hero-blurb">
