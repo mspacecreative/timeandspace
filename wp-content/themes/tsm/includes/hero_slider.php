@@ -7,7 +7,7 @@
 		$bgimg = get_sub_field('hero_background_image') ):
 		$bgimgsize = 'large'
 		if ( $bgimg ) : ?>
-			<?php echo wp_get_attachment_image( $image, $bgimgsize );
+			<?php echo wp_get_attachment_image( $bgimg, $bgimgsize );
 		endif;
 		if( have_rows('hero_button') ): 
 		while( have_rows('hero_button') ): the_row();
