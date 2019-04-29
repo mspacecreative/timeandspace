@@ -1731,12 +1731,6 @@ body {
 /* HIDE BRAND ELEMENT ON TEAM PAGE
 ----------------------------------------------*/
 
-@media (max-width: 1024px) {
-	#page-container.shiftnav-wrap {
-		padding-top: 58px!important;
-	}
-}
-
 .page-id-422 #main-content:after {
 	display: none;
 }
