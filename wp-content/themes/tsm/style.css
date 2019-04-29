@@ -1885,9 +1885,9 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 	padding: 8px 10px;
 }
 
-#page-container.shiftnav-wrap {
+/*#page-container.shiftnav-wrap {
 	padding-top: 0!important;
-}
+}*/
 
 #main-header {
 	position: fixed;
