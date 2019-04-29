@@ -17,6 +17,23 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 			<?php } else { ?>
 			<div class="et_pb_section" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/backgrounds/case-studies.jpg); padding-bottom: 0;">
 			<?php } ?>
+				<?php if ( get_field('hide_page_title') ): ?>
+				<div class="et_pb_row hide-page-title" style="padding-bottom: 0;">
+					<?php if ( get_field( 'taller_header_image' ) ) : ?>
+					<div class="cpt-title" style="padding-top: 40%;">
+						<h1>
+							<?php the_title(); ?>
+						</h1>
+					</div>
+					<?php else: ?>
+					<div class="cpt-title">
+						<h1>
+							<?php the_title(); ?>
+						</h1>
+					</div>
+					<?php endif; ?>
+				</div>
+				<?php else : ?>
 				<div class="et_pb_row" style="padding-bottom: 0;">
 					<?php if ( get_field( 'taller_header_image' ) ) : ?>
 					<div class="cpt-title" style="padding-top: 40%;">
@@ -32,6 +49,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					</div>
 					<?php endif; ?>
 				</div>
+				<?php endif; ?>
 			</div> 
 		</div>
 		<div id="content-area" class="clearfix">
