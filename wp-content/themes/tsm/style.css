@@ -1332,7 +1332,7 @@ p.et_pb_member_position {
 }
 
 #page-container {
-	padding-top: 58px;
+	padding-top: 58px!important;
 }
 
 #main-header {
