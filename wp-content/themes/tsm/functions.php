@@ -49,6 +49,7 @@ function mytheme_et_project_posttype_args( $args ) {
 
 // CUSTOM IMAGE CROP
 add_image_size( 'profile', 300, 449, array( 'left', 'top' ) );
+add_image_size( 'header', 1600, 401, array( 'center', 'center' ) );
 
 add_filter( 'image_size_names_choose', 'wpshout_custom_sizes' );
 function wpshout_custom_sizes( $sizes ) {
