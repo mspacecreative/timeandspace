@@ -2555,7 +2555,7 @@ li.menu-item-has-children span.sub-toggle {
 	.slick-arrow {
 		display: none!important;
 	}
-	.slick-dots {
+	.entry-content ul.slick-dots, ul.slick-dots {
 		bottom: -25px;
 	}
 }
