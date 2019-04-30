@@ -35,15 +35,17 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 				<?php endif;
 			endif; ?>
 				<?php if ( get_field('hide_page_title') ): ?>
-				<div class="et_pb_row" style="padding-bottom: 0;">
-					<div class="cpt-title" style="padding-top: 40%;">
+				<div class="et_pb_row hide-page-title" style="padding-bottom: 0;">
+					<div class="cpt-title">
 						<h1>
 							<span class="hide-on-mobile">Case<br />Study</span>
 							<span class="hide-on-desktop"><?php _e('Case Study'); ?></span>
 							<?php the_title(); ?>
 						</h1>
 					</div>
-					<?php else: ?>
+				</div>
+				<?php else : ?>
+				<div class="et_pb_row" style="padding-bottom: 0;">
 					<div class="cpt-title">
 						<h1>
 							<span class="hide-on-mobile">Case<br />Study</span>
