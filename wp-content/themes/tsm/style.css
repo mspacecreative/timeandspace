@@ -2639,6 +2639,6 @@ li.menu-item-has-children span.sub-toggle {
 	padding: 0;
 }
 
-.hide-page-title .cpt-title h1 {
-	visibility: hidden;
+.hide-page-title {
+	display: none;
 }
