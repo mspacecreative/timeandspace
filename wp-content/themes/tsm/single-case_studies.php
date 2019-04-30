@@ -10,42 +10,25 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 <div id="main-content">
 	<div class="container">
-		
 		<div class="cpt-header-area">
 			<?php 
-			if ( get_field( 'taller_header_image' ) ) :
-				$image = get_field('page_header_bg_img');
-				$size = 'header-tall';
-				if ( $image ): ?>
-				<div class="et_pb_section" style="padding-bottom: 40%; height: 0; padding-top: 0;">
-				<?php echo wp_get_attachment_image( $image, $size ); ?>
-				<?php else : ?>
-				<div class="et_pb_section" style="padding-bottom: 40%; height: 0; padding-top: 0;">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/backgrounds/case-studies-tall.jpg" />
-				<?php endif; 
-			else : 
-				$image = get_field('page_header_bg_img');
-				$size = 'header'; 
-				if ( $image ): ?>
-				<div class="et_pb_section" style="padding-bottom: 25%; height: 0; padding-top: 0;">
-				<?php echo wp_get_attachment_image( $image, $size ); ?>
-				<?php else : ?>
-				<div class="et_pb_section" style="padding-bottom: 25%; height: 0; padding-top: 0;">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/backgrounds/case-studies.jpg" />
-				<?php endif;
-			endif; ?>
-				<?php if ( get_field('hide_page_title') ): ?>
-				<div class="et_pb_row hide-page-title" style="padding-bottom: 0;">
-					<div class="cpt-title">
-						<h1>
-							<span class="hide-on-mobile">Case<br />Study</span>
-							<span class="hide-on-desktop"><?php _e('Case Study'); ?></span>
-							<?php the_title(); ?>
-						</h1>
-					</div>
-				</div>
-				<?php else : ?>
+			if (get_field('page_header_bg_img') ) : ?>
+			<div class="et_pb_section" style="background-image: url(<?php the_field('page_header_bg_img'); ?>); padding-bottom: 0;">
+			
+			<?php else : ?>
+			<div class="et_pb_section" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/backgrounds/case-studies.jpg); padding-bottom: 0;">
+			
+			<?php endif; ?>
 				<div class="et_pb_row" style="padding-bottom: 0;">
+					<?php if ( get_field( 'taller_header_image' ) ) : ?>
+					<div class="cpt-title" style="padding-top: 40%;">
+						<h1>
+							<span class="hide-on-mobile">Case<br />Study</span>
+							<span class="hide-on-desktop"><?php _e('Case Study'); ?></span>
+							<?php the_title(); ?>
+						</h1>
+					</div>
+					<?php else: ?>
 					<div class="cpt-title">
 						<h1>
 							<span class="hide-on-mobile">Case<br />Study</span>
@@ -53,11 +36,10 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 							<?php the_title(); ?>
 						</h1>
 					</div>
+					<?php endif; ?>
 				</div>
-				<?php endif; ?>
 			</div> 
 		</div>
-	
 		<div id="content-area" class="clearfix">
 			<?php while ( have_posts() ) : the_post(); ?>
 			<?php if (et_get_option('divi_integration_single_top') <> '' && et_get_option('divi_integrate_singletop_enable') == 'on') echo(et_get_option('divi_integration_single_top')); ?>

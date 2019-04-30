@@ -1480,13 +1480,6 @@ body {
 	padding-top: 0;
 }
 
-.single-case_studies .cpt-header-area .et_pb_row {
-	left: 50%;
-	transform: translateX(-50%);
-	position: absolute;
-	bottom: 0;
-}
-
 @media only screen and (min-width: 980px) {
 
 #page-container.shiftnav-wrap {
@@ -1914,10 +1907,6 @@ html .shiftnav-searchbar-drop .shiftnav-search-input {
 .hero-slider {
 	height: 100%;
 }
-
-/*.hero-slider div {
-	height: 100%;
-}*/
 
 .hero-bg-img {
 	background-repeat: no-repeat;
