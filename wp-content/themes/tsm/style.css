@@ -2088,6 +2088,7 @@ HERO BLURB GRADIENT BACKGROUND
 	width: 90%;
 	max-width: 850px;
 	font-weight: bold;
+	bottom: auto;
 }
 
 .single-case_studies #content-area article p:last-child, .the_challenge_section p:last-child {
