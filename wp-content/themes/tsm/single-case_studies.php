@@ -29,7 +29,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 						</h1>
 					</div>
 					<?php else: ?>
-					<div class="cpt-title">
+					<div class="cpt-title" style="padding-top: 15%;">
 						<h1>
 							<span class="hide-on-mobile">Case<br />Study</span>
 							<span class="hide-on-desktop"><?php _e('Case Study'); ?></span>
