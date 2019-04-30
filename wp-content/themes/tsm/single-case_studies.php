@@ -14,24 +14,25 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 		<div class="cpt-header-area">
 			<?php 
 			if ( get_field( 'taller_header_image' ) ) :
-			$image = get_field('page_header_bg_img');
-			$size = 'header-tall';
-			if ( $image ) { ?>
-			<div class="et_pb_section" style="padding-bottom: 40%; height: 0; padding-top: 0;">
-			<?php echo wp_get_attachment_image( $image, $size ); ?>
-			<?php } else { ?>
-			<div class="et_pb_section" style="padding-bottom: 40%; height: 0; padding-top: 0;">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/backgrounds/case-studies-tall.jpg" />
-			<?php } 
+				$image = get_field('page_header_bg_img');
+				$size = 'header-tall';
+				if ( $image ): ?>
+				<div class="et_pb_section" style="padding-bottom: 40%; height: 0; padding-top: 0;">
+				<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php else : ?>
+				<div class="et_pb_section" style="padding-bottom: 40%; height: 0; padding-top: 0;">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/backgrounds/case-studies-tall.jpg" />
+				<?php endif; 
 			else : 
-			$image = get_field('page_header_bg_img');
-			$size = 'header'; ?>
-			<div class="et_pb_section" style="padding-bottom: 25%; height: 0; padding-top: 0;">
-			<?php echo wp_get_attachment_image( $image, $size ); ?>
-			<?php } else { ?>
-			<div class="et_pb_section" style="padding-bottom: 25%; height: 0; padding-top: 0;">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/backgrounds/case-studies.jpg" />
-			<?php }
+				$image = get_field('page_header_bg_img');
+				$size = 'header'; 
+				if ( $image ): ?>
+				<div class="et_pb_section" style="padding-bottom: 25%; height: 0; padding-top: 0;">
+				<?php echo wp_get_attachment_image( $image, $size ); ?>
+				<?php else : ?>
+				<div class="et_pb_section" style="padding-bottom: 25%; height: 0; padding-top: 0;">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/backgrounds/case-studies.jpg" />
+				<?php endif;
 			endif; ?>
 				<?php if ( get_field('hide_page_title') ): ?>
 				<div class="et_pb_row" style="padding-bottom: 0;">
