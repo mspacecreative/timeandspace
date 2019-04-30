@@ -2342,6 +2342,7 @@ HERO BLURB GRADIENT BACKGROUND
 
 .case-studies-content, .service-bg {
 	padding: 5%;
+	background-color: #f9f9f9;
 }
 
 .page #content-area .row-width-850 .et_pb_row {
