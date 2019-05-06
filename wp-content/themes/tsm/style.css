@@ -2410,10 +2410,10 @@ HERO BLURB GRADIENT BACKGROUND
 	.case-studies-feature-img {
 		height: 300px;
 	}
-	/*.cpt-content-row, .page #content-area .et_pb_row {
+	.cpt-content-row, .page #content-area .et_pb_row {
 		padding-left: 15px;
 		padding-right: 15px;
-	}*/
+	}
 }
 
 @media (min-width: 767px) {
