@@ -2409,7 +2409,7 @@ HERO BLURB GRADIENT BACKGROUND
 	.case-studies-feature-img {
 		height: 300px;
 	}
-	.cpt-content-row, .page #content-area .et_pb_row {
+	.cpt-content-row, .page #content-area .et_pb_row, .the_challenge_section {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
