@@ -723,7 +723,7 @@ h3 {
 /* FULL WIDTH
 --------------------------------------------------*/
 
-.full-width .et_pb_row {
+.page .full-width #content-area .et_pb_row {
 	max-width: none;
 	width: 100%;
 }
@@ -2259,10 +2259,6 @@ HERO BLURB GRADIENT BACKGROUND
 
 .page-template-page-services.page #content-area {
 	width: 100%;
-}
-
-.page #content-area .et_pb_row {
-	max-width: none;
 }
 
 .page.page-template-page-full-width #content-area, .page.page-template-page-services #content-area {
