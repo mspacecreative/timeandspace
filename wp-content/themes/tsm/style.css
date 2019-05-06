@@ -2278,10 +2278,10 @@ HERO BLURB GRADIENT BACKGROUND
 	padding-bottom: 0;
 }
 
-/*.page #content-area .et_pb_row {
+.page #content-area .et_pb_row {
 	max-width: 1140px;
 	padding: 2% 30px;
-}*/
+}
 
 #sidebar .menu li.menu-item-has-children ul {
 	display: none;
