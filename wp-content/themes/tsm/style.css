@@ -2274,11 +2274,11 @@ HERO BLURB GRADIENT BACKGROUND
 	padding-top: 0;
 }
 
-.page .et_pb_section .et_pb_row:last-child {
+/*.page .et_pb_section .et_pb_row:last-child {
 	padding-bottom: 0;
 }
 
-/*.page #content-area .et_pb_row {
+.page #content-area .et_pb_row {
 	max-width: 1140px;
 	padding: 2% 30px;
 }*/
