@@ -2111,7 +2111,6 @@ HERO BLURB GRADIENT BACKGROUND
 }
 
 .cpt-content-section.challenge {
-	padding: 25px 0;
 	background: #182a54;
 	color: #fff;
 }
@@ -2409,7 +2408,7 @@ HERO BLURB GRADIENT BACKGROUND
 	.case-studies-feature-img {
 		height: 300px;
 	}
-	.cpt-content-row, .page #content-area .et_pb_row, .the_challenge_section {
+	.cpt-content-row, .page #content-area .et_pb_row {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
