@@ -2154,7 +2154,7 @@ HERO BLURB GRADIENT BACKGROUND
 .cpt-content-row {
 	max-width: 850px;
 	margin: auto;
-	padding: 50px 15px;
+	padding: 50px 30px;
 }
 
 .cpt-title h1 span {
@@ -2386,15 +2386,12 @@ HERO BLURB GRADIENT BACKGROUND
 }
 
 @media (max-width: 980px) {
-	.case-studies-content {
-	    padding: 80px 5%;
-	}	
-}
-
-@media (max-width: 980px) {
 
 	.et_pb_column .et_pb_team_member_image {
 		margin-bottom: 10px!important;
+	}
+	.case-studies-content {
+	    padding: 80px 5%;
 	}
 	.hero-blurb h1 {
 		font-size: 20px;
