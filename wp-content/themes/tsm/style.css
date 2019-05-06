@@ -2053,6 +2053,7 @@ HERO BLURB GRADIENT BACKGROUND
 	padding: 5px;
 	font-size: 0;
 	background: rgb(88,82,123);
+	border: 1px solid #fff;
 }
 
 .services-section h2 {
