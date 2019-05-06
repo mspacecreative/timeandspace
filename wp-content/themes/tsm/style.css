@@ -2243,9 +2243,9 @@ HERO BLURB GRADIENT BACKGROUND
 	background: #f9f9f9;
 }
 
-/*.cpt-content-section {
+.cpt-content-section {
 	padding: 0 5%;
-}*/
+}
 
 .page-template-page-full-width #main-content .container, .page-template-page-services #main-content .container, .page #main-content .container {
 	padding-top: 0;
