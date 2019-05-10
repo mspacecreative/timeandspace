@@ -58,7 +58,7 @@ add_filter( 'wp_image_editors', 'wpb_image_editor_default_to_gd' );
 
 // CUSTOM IMAGE CROP
 add_image_size( 'profile', 300, 449, array( 'left', 'top' ) );
-add_image_size( 'header', 1600, 401, array( 'center', 'center' ) );
+add_image_size( 'header', 1600, 400, array( 'center', 'center' ) );
 add_image_size( 'header-tall', 1600, 640, array( 'center', 'center' ) );
 
 add_filter( 'image_size_names_choose', 'wpshout_custom_sizes' );

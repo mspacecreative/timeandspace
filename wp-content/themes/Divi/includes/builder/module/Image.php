@@ -64,9 +64,17 @@ class ET_Builder_Module_Image extends ET_Builder_Module {
 			),
 			'max_width'             => array(
 				'options' => array(
+					'width'     => array(
+						'depends_show_if' => 'off',
+					),
 					'max_width' => array(
 						'depends_show_if' => 'off',
 					),
+				),
+			),
+			'height'                => array(
+				'css' => array(
+					'main' => '%%order_class%% .et_pb_image_wrap img',
 				),
 			),
 			'fonts'                 => false,
@@ -86,6 +94,7 @@ class ET_Builder_Module_Image extends ET_Builder_Module {
 	function get_fields() {
 		$fields = array(
 			'src' => array(
+				'label'              => esc_html__( 'Image', 'et_builder' ),
 				'type'               => 'upload',
 				'option_category'    => 'basic_option',
 				'upload_button_text' => esc_attr__( 'Upload an image', 'et_builder' ),
@@ -252,6 +261,7 @@ class ET_Builder_Module_Image extends ET_Builder_Module {
 				'toggle_slug' => 'width',
 				'affects' => array(
 					'max_width',
+					'width',
 				),
 			),
 			'always_center_on_mobile' => array(
@@ -293,6 +303,7 @@ class ET_Builder_Module_Image extends ET_Builder_Module {
 		$hover_icon              = $this->props['hover_icon'];
 		$use_overlay             = $this->props['use_overlay'];
 		$animation_style         = $this->props['animation_style'];
+		$box_shadow_style        = $this->props['box_shadow_style'];
 
 		$video_background          = $this->video_background();
 		$parallax_image_background = $this->get_parallax_image_background();
@@ -307,7 +318,7 @@ class ET_Builder_Module_Image extends ET_Builder_Module {
 		if ( 'on' === $force_fullwidth ) {
 			ET_Builder_Element::set_style( $render_slug, array(
 				'selector'    => '%%order_class%%',
-				'declaration' => 'max-width: 100% !important;',
+				'declaration' => 'width: 100%; max-width: 100% !important;',
 			) );
 
 			ET_Builder_Element::set_style( $render_slug, array(
@@ -379,12 +390,22 @@ class ET_Builder_Module_Image extends ET_Builder_Module {
 			) );
 		}
 
+		$box_shadow_overlay_wrap_class = 'none' !== $box_shadow_style
+			? 'has-box-shadow-overlay'
+			: '';
+
+		$box_shadow_overlay_element = 'none' !== $box_shadow_style
+			? '<div class="box-shadow-overlay"></div>'
+			: '';
+
 		$output = sprintf(
-			'<span class="et_pb_image_wrap"><img src="%1$s" alt="%2$s"%3$s />%4$s</span>',
+			'<span class="et_pb_image_wrap %5$s">%6$s<img src="%1$s" alt="%2$s"%3$s />%4$s</span>',
 			esc_attr( $src ),
 			esc_attr( $alt ),
 			( '' !== $title_text ? sprintf( ' title="%1$s"', esc_attr( $title_text ) ) : '' ),
-			'on' === $is_overlay_applied ? $overlay_output : ''
+			'on' === $is_overlay_applied ? $overlay_output : '',
+			$box_shadow_overlay_wrap_class,
+			$box_shadow_overlay_element
 		);
 
 		if ( 'on' === $show_in_lightbox ) {

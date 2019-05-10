@@ -1549,6 +1549,10 @@ body {
 	height: auto;
 }
 
+.et_right_sidebar #main-content .container:before {
+    right: 25%!important;
+}
+
 .case-studies-content-container {
 	display: flex;
 }
@@ -1563,10 +1567,6 @@ body {
 	margin-right: 5%;
 	padding-right: 0;
 	padding-bottom: 0;
-}
-
-.et_right_sidebar #main-content .container:before {
-    right: 27.5%!important;
 }
 .et_right_sidebar #sidebar {
 	padding-left: 5%;

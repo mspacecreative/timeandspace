@@ -14,20 +14,29 @@
 			var maxHeight = Math.max.apply(null, elementHeights);
 			
 			$('.hero-bg-img').css('height', (maxHeight));
-		}*/
+		}
 		
 		function equalHeightColumns() {
 		    var equalHeight = $('.service-bucket').siblings('.service-bg').outerHeight();
 		    $('.service-bucket').css('height', equalHeight);
 		}
 		
+		function searchClear() {
+			$('.search #left-area').css({
+				'padding-top' : $('header').height(),
+				'padding-bottom' : $('header').height()
+			});
+		}*/
+		
 		$(window).resize(function() {
 			equalHeightColumns();
 			//blurbContainerHeight();
+			//searchClear();
 		});
 		
 		$(window).load(function() {
 			equalHeightColumns();
+			//searchClear()
 		});
 		
 		$('#sidebar .menu li.menu-item-has-children').prepend('<span class="sub-toggle"><i class="fa fa-angle-down"></i></span>');

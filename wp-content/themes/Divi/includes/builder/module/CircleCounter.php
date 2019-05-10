@@ -51,6 +51,9 @@ class ET_Builder_Module_Circle_Counter extends ET_Builder_Module {
 				'css' => array(
 					'important' => array( 'custom_margin' ),
 				),
+				'custom_margin' => array(
+					'default' => '0px|auto|30px|auto|false|false',
+				),
 			),
 			'max_width'             => array(
 				'options' => array(
@@ -169,9 +172,11 @@ class ET_Builder_Module_Circle_Counter extends ET_Builder_Module {
 				'type'            => 'range',
 				'option_category' => 'configuration',
 				'range_settings'  => array(
-					'min'  => '0.1',
-					'max'  => '1.0',
-					'step' => '0.05',
+					'min'       => '0.1',
+					'max'       => '1.0',
+					'step'      => '0.05',
+					'min_limit' => '0.0',
+					'max_limit' => '1.0',
 				),
 				'tab_slug'        => 'advanced',
 				'toggle_slug'     => 'circle',
