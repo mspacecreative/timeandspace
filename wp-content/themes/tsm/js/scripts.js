@@ -28,17 +28,6 @@
 			});
 		}*/
 		
-		$(window).resize(function() {
-			equalHeightColumns();
-			//blurbContainerHeight();
-			//searchClear();
-		});
-		
-		$(window).load(function() {
-			equalHeightColumns();
-			//searchClear()
-		});
-		
 		$('#sidebar .menu li.menu-item-has-children').prepend('<span class="sub-toggle"><i class="fa fa-angle-down"></i></span>');
 		$('span.sub-toggle').on('touchstart click', function (e) {
 		  e.preventDefault();
