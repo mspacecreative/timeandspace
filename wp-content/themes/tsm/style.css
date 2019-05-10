@@ -2526,11 +2526,11 @@ li.menu-item-has-children span.sub-toggle {
   font-size: 20px;
 }
 
-/*@media (max-width: 812px) {
-	.cpt-title {
-		padding-top: 35%;
+@media (max-width: 812px) {
+	.slick-dots button {
+		border: 1px solid rgb(88,82,123);
 	}
-}*/
+}
 
 #footer-widgets .footer-widget li.current-menu-item a {
 	color: #83a138;
